@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>戦闘ゲーム</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="top"></div>
+  <main>
+    <section class="player">
+      <div class="jukensei">
+        <div class="wipe">
+          <div class="picture">
+            <img src="../img/kid-1529218_1920.jpg" class="juken"></img>
+            <h2 id="playerName"></h2>
+          </div>
+          <div class="states">
+            <div class="hp">
+              <div id="playerhp"></div>
+            </div>
+
+            <div class="nemuke">
+              <div id="playernemuke"></div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button id="study" class="study">勉強する</button>
+          <button id="heal" class="heal">リフレッシュ</button>
+          <button id="sns" class="sns">SNSをチェック</button>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="container">
+      <div class="box">
+        <div id="box[1]" class="box1">20:00</div>
+        <div id="box[2]" class="box2">20:30</div>
+        <div id="box[3]" class="box3">21:00</div>
+        <div id="box[4]" class="box4">21:30</div>
+        <div id="box[5]" class="box5">22:00</div>
+        <div id="box[6]" class="box6">22:30</div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="text">
+    <div class="text_area">
+      <div id="comment" class="comment"></div>
+    </div>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+
+</html>

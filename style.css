@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.top {
+    margin-left: 50px;
+    margin-right: 50px;
+    /* padding: 20px; */
+    background-color: #ddd;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/univ.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+main {
+    /* padding: 20px; */
+    background-color: #ddd;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+
+}
+
+section {
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.wipe {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.juken {
+    width: 300px;
+    height: 200px;
+    /* background-image: url(img/kid-1529218_1920.jpg); */
+}
+
+.jukensei {
+    display: flex;
+    flex-direction: column;
+}
+
+.picture {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.spates {
+    display: flex;
+    flex-direction: column;
+}
+
+.player {
+    margin-bottom: 20px;
+}
+
+.hp {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.nemuke {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+.study {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f44;
+    color: black;
+    border: 0px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heal {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    color: black;
+    border: 0px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sns {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    color: black;
+    border: 0px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.study.deactive {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.container {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    width: 120px;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    font-size: small;
+}
+
+.study.deactive {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.heal.deactive {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.sns.deactive {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.text_area {
+    width: 1000px;
+    height: 100px;
+    padding: 30px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.comment {
+    font-size: larger;
+    font-weight: bold;
+}
+
