@@ -53,7 +53,7 @@ section {
 .juken {
     width: 300px;
     height: 200px;
-    /* background-image: url(img/kid-1529218_1920.jpg); */
+    background-image: url(../img/kid-1529218_1920.jpg);
 }
 
 .jukensei {
@@ -221,4 +221,3 @@ section h1 {
     font-size: larger;
     font-weight: bold;
 }
-
