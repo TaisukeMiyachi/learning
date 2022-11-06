@@ -29,11 +29,36 @@ if (playerData["hp"] <= 0) {
 document.getElementById("study").addEventListener("click", function () {
   endGame = false;
   clickCount += 1;
+  tryCount += 1;
+
+  let i = tryCount;
+  if (i === 1) {
+    console.log(i);
+    document.getElementById("box[1]").style.backgroundColor = "red";
+    // console.log(i);
+  } else if (i === 2) {
+    console.log(tryCount);
+    document.getElementById("box[2]").style.backgroundColor = "red";
+  } else if (i === 3) {
+    console.log(tryCount);
+    document.getElementById("box[3]").style.backgroundColor = "red";
+  } else if (i === 4) {
+    console.log(tryCount);
+    document.getElementById("box[4]").style.backgroundColor = "red";
+  } else if (i === 5) {
+    console.log(tryCount);
+    document.getElementById("box[5]").style.backgroundColor = "red";
+  } else if (i === 6) {
+    console.log(tryCount);
+    document.getElementById("box[6]").style.backgroundColor = "red";
+  }
 
   if (clickCount === 1) {
     insertText("comment", "少し賢くなった！");
+    tryCount -= 1;
   };
   if (clickCount === 2) {
+    tryCount -= 1;
     const max = 10;
     const min = 5;
     const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -45,6 +70,7 @@ document.getElementById("study").addEventListener("click", function () {
     insertText("playerhp", "学力" + playerData["hp"]);
   };
   if (clickCount === 3) {
+    tryCount -= 1;
     insertText("comment", "疲れて眠くなってきた。");
   };
   if (clickCount === 4) {
@@ -58,7 +84,7 @@ document.getElementById("study").addEventListener("click", function () {
     insertText("comment", "眠気が" + study_nemuke + "だけ増した！　次はどうしますか？");
     insertText("playernemuke", "眠気" + playerData["nemuke"]);
 
-    tryCount += 1;
+
     clickCount = null;
 
     if (tryCount === 6) {
@@ -88,18 +114,44 @@ document.getElementById("study").addEventListener("click", function () {
     document.getElementById("heal").classList.add("deactive");
     document.getElementById("sns").classList.add("deactive");
   }
+
+
 });
 ///////////////////////////////////////////////////////////////////////////
-
+console.log(tryCount);
 // リフレッシュを押したとき///////////////////////////////////////////////////
 document.getElementById("heal").addEventListener("click", function () {
   endGame = false;
   clickCount += 1;
+  tryCount += 1;
 
+  let i = tryCount;
+  if (i === 1) {
+    console.log(i);
+    document.getElementById("box[1]").style.backgroundColor = "greenyellow";
+    // console.log(i);
+  } else if (i === 2) {
+    console.log(tryCount);
+    document.getElementById("box[2]").style.backgroundColor = "greenyellow";
+  } else if (i === 3) {
+    console.log(tryCount);
+    document.getElementById("box[3]").style.backgroundColor = "greenyellow";
+  } else if (i === 4) {
+    console.log(tryCount);
+    document.getElementById("box[4]").style.backgroundColor = "greenyellow";
+  } else if (i === 5) {
+    console.log(tryCount);
+    document.getElementById("box[5]").style.backgroundColor = "greenyellow";
+  } else if (i === 6) {
+    console.log(tryCount);
+    document.getElementById("box[6]").style.backgroundColor = "greenyellow";
+  }
   if (clickCount === 1) {
     insertText("comment", "休憩を入れて少しスッキリした！");
+    tryCount -= 1;
   }
   if (clickCount === 2) {
+    // tryCount -= 1;
     const max = 8;
     const min = 2;
     const randomnumber = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -115,7 +167,7 @@ document.getElementById("heal").addEventListener("click", function () {
     insertText("comment", "眠気が" + heal_nemuke + "減った。　次はどうしますか？");
     insertText("playernemuke", "眠気" + playerData["nemuke"]);
 
-    tryCount += 1;
+
     clickCount = null;
 
     if (tryCount === 6) {
@@ -136,11 +188,14 @@ document.getElementById("heal").addEventListener("click", function () {
       });
     };
   }
-});
 
+});
+console.log(tryCount);
 // SNSを押したとき/////////////////////////////////////////////////////////
 document.getElementById("sns").addEventListener("click", function () {
   endGame = false;
+  tryCount += 1;
+
   const max = 5;
   const min = 1;
 
@@ -150,6 +205,7 @@ document.getElementById("sns").addEventListener("click", function () {
     playerData["nemuke"] = playerData["nemuke"] - 50;
     insertText("comment", "好きな子からポジティブな返信あり！　眠気　-50");
     insertText("playernemuke", "眠気" + playerData["nemuke"]);
+
 
     if (playerData["nemuke"] <= 0) {
       playerData["nemuke"] = 0;
@@ -166,8 +222,8 @@ document.getElementById("sns").addEventListener("click", function () {
   } else {
     insertText("comment", "ただ無駄に時間が過ぎていった、、、");
   }
+  console.log(tryCount);
 
-  tryCount += 1;
 
   if (tryCount === 6) {
     document.getElementById("sns").addEventListener("click", function () {
@@ -185,20 +241,32 @@ document.getElementById("sns").addEventListener("click", function () {
       }
     });
   };
-  // const i = 0;
+  console.log(tryCount);
   let i = tryCount;
-
-  // console.log(tryCount);
-  // document.getElementById("box[2]").style.backgroundColor = "red";
 
   if (i === 1) {
     console.log(i);
-    document.getElementById("box[1]").style.backgroundColor = "red";
+    document.getElementById("box[1]").style.backgroundColor = "yellow";
     // console.log(i);
   } else if (i === 2) {
     console.log(tryCount);
-    document.getElementById("box[2]").style.backgroundColor = "red";
+    document.getElementById("box[2]").style.backgroundColor = "yellow";
+  } else if (i === 3) {
+    console.log(tryCount);
+    document.getElementById("box[3]").style.backgroundColor = "yellow";
+  } else if (i === 4) {
+    console.log(tryCount);
+    document.getElementById("box[4]").style.backgroundColor = "yellow";
+  } else if (i === 5) {
+    console.log(tryCount);
+    document.getElementById("box[5]").style.backgroundColor = "yellow";
+  } else if (i === 6) {
+    console.log(tryCount);
+    document.getElementById("box[6]").style.backgroundColor = "yellow";
   }
+  // console.log(tryCount);
+
+
 });
 
 ////////////////////////////////////////
