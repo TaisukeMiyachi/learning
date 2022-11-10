@@ -2,7 +2,7 @@
 
 ## DEMO
 
-  - デプロイしている場合はURLを記入（任意）
+  - https://taisukemiyachi.github.io/learning/
 
 ## 紹介と使い方
 

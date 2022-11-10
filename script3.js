@@ -47,7 +47,12 @@ let nextdo = function () {
   document.getElementById("comment").textContent = "次はどうしますか？"
 }
 
-// 勉強するを押した時
+function audio() {
+  document.getElementById("study").currenttime = 0;
+  document.getElementById("study").play();
+}
+
+// 勉強するを押した時///////////////////////////////////////////////////////
 document.getElementById("study").addEventListener("click", function () {
   endgame = false;
   tryCount += 1;
