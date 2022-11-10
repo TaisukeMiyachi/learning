@@ -5,27 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>戦闘ゲーム</title>
+  <title>学習ゲーム</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+  <!-- 説明書き -->
+  <nav id="g-nav">
+    <div class="text">
+      <h1>これから3時間の学習時間！時間を有効に使って最大限の効果を上げましょう！</h1>
+      <h1>30分ごとにあなたの取れる行動は3種類</h1>
+      <h1>「学習する」：しっかりと集中して学力を上げましょう。ただし、続けていくと疲れて眠気も襲ってきます。</h1>
+      <h1>「リフレッシュ」：疲れたときは休憩も大切。少しだけ目も覚めるでしょう。</h1>
+      <h1>「SNS」：言わずと知れた禁断のツール。しかし、使い方によってはいいこともあるかも・・・</h1>
+      <h1>眠気が溜まりすぎると寝落ちしてしまい時間を有効に使えません。</h1>
+      <h1>計画的に学習を進め、学力を高めましょう！</h1>
+      <img src="img/closebtn.png" class="clsbtn"></img>
+    </div>
+  </nav>
+
   <div class="top"></div>
   <main>
     <section class="player">
       <div class="jukensei">
         <div class="wipe">
           <div class="picture">
-            <img src="../img/kid-1529218_1920.jpg" class="juken"></img>
+            <img src="img/kid-1529218_1920.jpg" id=opnbtn class="juken"></img>
             <h2 id="playerName"></h2>
           </div>
           <div class="states">
             <div class="hp">
-              <div id="playerhp"></div>
+              <div id="playerhp">学力</div>
+              <div class="hpGauge">
+                <div class="hpGaugeValue" id="currentStudyHp"></div>
+              </div>
+              <div class="playerhpValue" id="playerhpValue"></div>
             </div>
 
             <div class="nemuke">
               <div id="playernemuke"></div>
+              <div class="hpGauge">
+                <div class="nemukeGaugeValue" id="currentNemuke"></div>
+              </div>
+              <div class="playernemukeValue" id="playernemukeValue"></div>
             </div>
           </div>
         </div>
@@ -37,15 +59,14 @@
       </div>
     </section>
 
-
     <div class="container">
       <div class="box">
-        <div id="box[1]" class="box1">20:00</div>
-        <div id="box[2]" class="box2">20:30</div>
-        <div id="box[3]" class="box3">21:00</div>
-        <div id="box[4]" class="box4">21:30</div>
-        <div id="box[5]" class="box5">22:00</div>
-        <div id="box[6]" class="box6">22:30</div>
+        <h2 id="box[1]" class="box1">20:00</h2>
+        <h2 id="box[2]" class="box2">20:30</h2>
+        <h2 id="box[3]" class="box3">21:00</h2>
+        <h2 id="box[4]" class="box4">21:30</h2>
+        <h2 id="box[5]" class="box5">22:00</h2>
+        <h2 id="box[6]" class="box6">22:30</h2>
       </div>
     </div>
 
